@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul, li {list-style: none;}
+        .box > li {
+            border: 1px solid #777;
+            width: 70px;
+            height: 35px;
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+            line-height: 35px;
+            background-color:burlywood;
+            }
+        a {
+            color: black;
+        }
+
+
+
+        .wrap {
+            background-color: black;
+            text-align: center;
+        }
+
+        .gnb > li {
+            display: inline-block;
+            width: 70px;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .gnb > li:hover {
+            background-color: rgb(201, 198, 198);
+        }
+
+        .gnb > li:hover > a {
+            color: black;
+        }
+
+        .gnb > li > a {
+            color: white;
+            text-decoration: none;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <nav>
+        <!-- 자식 태그에 중복이 되면 부모 태그에 class를 넣고 
+             부모태그를 통해 자식태그에 접근하면 다른 코드와 겹치지 않는다 -->
+        <ul class="box">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+            <li><a href="#">메뉴5</a></li>
+        </ul>
+    </nav>
+
+    <nav class="wrap">
+        <ul class="gnb">
+            <li><a href="##">메뉴</a></li>
+            <li><a href="##">메뉴</a></li>
+            <li><a href="##">메뉴</a></li>
+            <li><a href="##">메뉴</a></li>
+            <li><a href="##">메뉴</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

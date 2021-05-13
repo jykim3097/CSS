@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 특정 속성을 지닌 태크 선택 */
+        input[type="text"] {color:green;}
+        
+        /* 특정 속성을 하나라도 포함한 태그 선택 */
+        li[class*="col"] {color:lightseagreen;}
+    </style>
+</head>
+<body>
+    
+    <div>
+        <ul>
+            <li class="col-1">리스트1</li>
+            <li class="col-2">리스트2</li>
+            <li class="col-3">리스트3</li>
+            <li class="col-4">리스트4</li>
+        </ul>
+    </div>
+
+    <div>
+        <input type="text" naem="t1"><br>
+        <input type="text" naem="t2"><br>
+        <input type="text" naem="t3"><br>
+        <input type="text" naem="t4"><br>
+        <input type="button" naem="t5" value="버튼">
+    </div>
+
+</body>
+</html>
