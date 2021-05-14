@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            border: 1px solid #777;
+            width: 70%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .wrap .img-content {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .wrap .content {
+            float: left;
+            border: 2px solid #777;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .content .top {
+            padding-bottom: 50px;
+            border-bottom: 2px solid #777;
+        }
+
+        .price-wrap, .btn-wrap {
+            overflow: hidden;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        button {
+            width: 50%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="img-content"><!--사진-->
+            사진
+        </div>
+        <div class="content"><!--내용-->
+            <div class="top"><!--top-->
+                <div>
+                    제목: 패딩 바텀 50 px<br>
+                </div>
+                <div>
+                    내용: ㅎㅎ
+                </div>
+            </div>
+            <div class="price-wrap"><!--bottom1-->
+                <div class="left">가격:</div>
+                <div class="right">10000원</div>
+            </div>
+            <div class="btn-wrap"><!--bottom2-->
+                <div>
+                    <button class="left">장바구니</button>
+                </div>
+                <div>
+                    <button class="right">구매하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
