@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {padding:0; margin: 0;}
+        section {
+            width: 80%;
+            height: 500px;
+            background-color: yellowgreen;
+            margin: 0 auto; 
+            overflow: hidden;
+            position: relative;    
+        }
+        .box {
+            float: left; 
+            width: 25.0000%;
+            height: 200px;
+            background-color: teal;
+        }
+        /*box, section에 position : relative를 넣어서 각각 확인
+          없다면 body 기준으로*/
+        .pos {
+            background-color: tomato;
+            position: absolute; /*부모요소 기준으로 z축으로 올린다, 기준이 없으면 body 기준*/
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">박스</div>
+        <div class="box">박스</div>
+        <div class="box">박스</div>
+        <div class="box">박스
+            <div class="pos">포지션</div>
+        </div>
+    </section>
+</body>
+</html>

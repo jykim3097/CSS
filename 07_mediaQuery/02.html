@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 전체화면에 상자 6개, 테블릿화면 상자 4개, 휴대폰 화면에서 상자 2개 */
+        .box {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .inner {
+            border:1px solid #777;
+            box-sizing: border-box;
+        }
+
+        /* 태블릿 사이즈 이상 */
+        @media (min-width:1300px) {
+            .inner {
+                width: 16.6666%;
+                float: left;
+            }
+        }
+
+        /* 태블릿 영역 */
+        @media (max-width:1299px) and (min-width:768px) {
+            .inner {
+                width: 25%;
+                float: left;
+            }
+        }
+
+        /* 스마트폰 사이즈 */
+        @media (max-width:767px) {
+            .inner {
+                width: 50%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>미디어쿼리를 이용한 그리드</h2>
+
+    <div class="box">
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+        <div class="inner">박스</div>
+    </div>
+
+
+</body>
+</html>

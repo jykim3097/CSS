@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        ul, li {list-style: none;}
+
+        body {height: 1000px;}
+
+        /* 포지션 지정 후 위치값도 꼭 지정해줘야한다! */
+        /* z-index의 값으로 z축의 위치를 결정할 수 있다 */
+        header {position: fixed; left:0px; top:0px; width: 100%; z-index: 50;}
+
+        section {margin-top:170px;}
+        .logo {text-align: center; background-color: white;}
+
+        .menu {
+            text-align: center;
+            background-color: black;
+        }
+
+        .menu > li {display: inline-block;}
+
+        .menu > li > a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu > li > a:hover {background-color: #777;}
+
+        /* aside */
+        .side {
+            position: fixed;
+            right: 0px;
+            top:250px;
+            z-index:30px;
+        }
+        .side-list > li > a {
+            display: block;
+            padding:20px;
+            width: 80px;
+            text-align: center;
+            background-color: black;
+            color:white;
+            text-decoration: none;
+            font-size: 0.7em;
+            border-bottom: 1px solid #777;
+            letter-spacing: -1px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../03_background/img/dolphin.png" alt="dolphin">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>내용..</section>
+    
+    <aside class="side">
+        <ul class="side-list">
+            <li>
+                <a href="">
+                    <p>카톡</p>
+                    <p>kkk123</p>
+               </a>
+            </li>
+            <li><a href="">전화번호</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴1</a></li>
+        </ul>
+    </aside>
+</body>
+</html>

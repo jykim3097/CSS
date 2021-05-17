@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 04_fixed 페이지 복붙 */
+        * {margin: 0; padding: 0;}
+        ul, li {list-style: none;}
+
+        body {height: 1000px;}
+
+        header {position: fixed; left:0px; top:0px; width: 100%; z-index: 50;}
+
+        section {margin-top:150px;}
+        
+        .logo {text-align: center; background-color: white;}
+
+        .menu {
+            text-align: center;
+            background-color: black;
+        }
+
+        .menu > li {display: inline-block;}
+
+        .menu > li > a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu > li > a:hover {background-color: #777;}
+
+        /* sticky 
+        - 설정된 영역에 도달하기 전에는 일반적인 형식으로 움직이다가
+          설정된 위치에 닿으면 fixed된다
+        1. top, bottom, left, right 중 한가지 옵션이 반드시 있어야한다
+        2. 어떤 부모 요소든 overflow:hidden이 있으면 동작하지 않는다
+         */
+
+        .inner1 {background-color: thistle; height: 500px;}
+        .inner2 {background-color: tomato; position: sticky; top:150px ;z-index: 100;}
+        .inner3 {background-color: teal; height: 1500px;}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../03_background/img/dolphin.png" alt="dolphin">
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴1</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="inner1">내용..</div>
+        <div class="inner2">스티키..</div>
+        <div class="inner3">내용..</div>
+    </section>
+    
+</body>
+</html>
