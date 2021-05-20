@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal 연습</title>
+
+    <!-- 참조 파일 임포트 순서도 중요하다! -->
+
+    <!-- 부트스트랩 css파일 참조 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- 부트스트랩 테마파일 참조 -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <!-- jquery 파일 참조 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 부트스트랩 js파일 참조 -->
+    <script src="js/bootstrap.js"></script>
+    
+</head>
+<body>
+
+    <!-- 모달 > 화면에 창을 숨겨두고 버튼 클릭시 숨겨진 창을 보여주는 형태로 동작 -->
+
+    <!-- 내부적으로 js가 동작하는데 id값(#myModal)을 가져가서 숨겨진 창을 보여지도록(display) 한다 
+         그러므로 id값을 함부로 수정하면 안된다
+         모달 창을 사용하려면 jquery 참조가 필요하다 -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+    
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

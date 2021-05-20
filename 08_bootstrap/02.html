@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 부트스트랩 css파일 참조 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- 부트스트랩 테마파일 참조 -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+
+    <!-- 부트스트랩 js파일 참조 -->
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        ul, li {list-style: none;}
+        .box {background-color: aqua;}
+
+        .box2 {
+            background-color: tomato;
+            text-align: center; /*하위 자식 요소를 가운데 정렬*/
+            margin: 0 auto;
+            float: none;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- pc, 태블릿, 모바일 환경을 전부 다 지정하려면?  -->
+    <section>
+        <div class="container">
+            <ul class="row">
+                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">BOX</li>
+                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">BOX</li>
+                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">BOX</li>
+                <li class="col-lg-3 col-md-4 col-sm-6 col-xs-12 box">BOX</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 부트스트랩의 반응형 그리드로 가운데 정렬하기 -->
+    <!-- 화면이 xs 이상이 될 때 전체화면을 차지해버리게 되는 상황 -->
+    <!-- margin: 0 auto로 해도 가운데로 안들어오는데, col 클래스들이 기본적으로 float:left가 사용되어있기 때문이다 -->
+    <!-- 그러므로 style에 float:none을 넣어준다 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-7 col-sm-12 col-xs-12 box2">가운데</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

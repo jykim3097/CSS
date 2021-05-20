@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- 부트스트랩 css파일 참조 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- jquery 파일 참조 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 부트스트랩 js파일 참조 -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- 개인 커스텀 디자인 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/board.css">
+
+</head>
+<body>
+    
+    <!-- header -->
+    <header class="custom_header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo.svg" style="width:40px;" alt="logo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <!-- 드롭다운메뉴
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            <li><a href="#">Page 1-1</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                            </ul>
+                        </li>
+                        -->
+                        <li><a href="#">예약</a></li>
+                        <li><a href="#">Q&A</a></li>
+                    </ul>
+
+                    <!-- 우측 회원 메뉴 -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <!-- 검색바 -->
+                    <form class="navbar-form navbar-right" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <h3>나이키 상품리스트</h3>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="prod-list"> <!--부모 영역-->
+                        <div class="prod-img"> <!--이미지 영역-->
+                            <img src="img/nike/nike1.jpg">
+                        </div>
+                        <div class="prod-content"> <!--부모영역-->
+                            <div class="info"><!--left-->
+                                <span>나이키 에어맥스</span>
+                                <span>MAN 신발 라이프스타일</span>
+                                <span>8칼라</span>
+                            </div>
+                            <div class="price"> <!--right-->
+                                <strong>199,000</strong>
+                            </div>
+                        </div>
+                        <div class="prod-color"><!--hover 영역-->
+                            <ul>
+                                <li><img src="img/nike/color1.jpg"></li>
+                                <li><img src="img/nike/color2.jpg"></li>
+                                <li><img src="img/nike/color3.jpg"></li>
+                                <li><img src="img/nike/color4.jpg"></li>
+                                <li><img src="img/nike/color5.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12"> <!--왼쪽 영역-->
+                    <div class="copyright">
+                        <a href=""><img src="img/logo.svg" alt="logo" style="width: 30px;"></a>
+                        <div class="top">
+                            jiyoung github |  대표자 : jykim | E-MAIL : jykim3097@gmail.com <br>
+                        </div>
+                        <div class="bottom">
+                            개인정보보호책임자 : jykim | jykim3097의 github입니다<br>
+                            주소 : 대한민국 <br>
+                            <address>@Bootstrap. ALL RIGHTS RESERVED</address>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-12"> <!--오른쪽 영역-->
+                    <ul class="footer-menu">
+                        <li><a href="">고객센터</a></li>
+                        <li><a href="">유용한정보</a></li>
+                        <li><a href="">개인정보취급방침</a></li>
+                        <li><a href="">QNA</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
