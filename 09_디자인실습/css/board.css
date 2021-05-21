@@ -1,4 +1,7 @@
 /* ===== 나이키 상품 ===== */
+.prod-list {
+    margin-bottom: 20px;
+}
 
 .prod-list > .prod-color > ul {
     overflow: hidden;
@@ -33,6 +36,13 @@
     width: 100%;
 }
 
-/* 숙제! 
-   - 이미지영역의 margin을 -값으로 위로
-   - 서서히 보여주기 : transition, w3school */
+/* 컬러 hover 영역 */
+.prod-color {
+    opacity: 0;
+    transition : all 1s ease-in-out; /*css속성, 기간, 트랜지션속성, 딜레이*/
+    margin-top: -32px; /*음수 값으로 8칼러 위쪽으로 이동*/
+}
+
+.prod-list:hover > .prod-color {
+    opacity: 1;
+}
