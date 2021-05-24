@@ -24,8 +24,52 @@
     box-shadow: 0px 8px 16px #d2d2d2;
 }
 
+/* 모바일 화면 */
 @media(max-width:768px){
     .join-form form {
         padding-top: 10px;
+    }
+}
+
+
+
+/* ======form_login.html====== */
+.titlebox2 {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.login-form {
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 80px;
+    box-shadow: 0px 8px 16px rgb(0, 0, 0, 0.15);
+    margin-bottom: 96px
+}
+
+.login-form img {
+    width: 100%;
+}
+
+/* 전체 화면 */
+.login-form-inner {
+    padding: 47px 30px;
+}
+
+/* 공통적으로 적용할 css를 작성한 후 media 쿼리를 작성한다 */
+/* 태블릿 환경 */
+@media(min-width:992px) and (max-width:1199px) {
+    .login-form-inner {
+        padding: 21px 30px;
+    }
+}
+
+/* 모바일 환경 */
+@media(max-width:991px) {
+    .login-form-inner{
+        padding: 12px 0;
+    } 
+    .login-form {
+        padding: 50px;
     }
 }

@@ -1,0 +1,120 @@
+@media(max-width:767px) {
+    aside {display: none;}
+}
+
+/* li[class*="col"] {color:lightseagreen;} */
+[class*="facebook"] {
+    margin-top: 20px;
+}
+
+.sec {
+    margin-bottom: 10px;
+}
+
+.aside-facebook .aside-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-facebook {
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+}
+
+.section-facebook > .form-control {
+    resize: vertical;
+    width: 100%;
+    min-height: 80px;
+}
+
+.section-facebook textarea {
+    transition: height 0.4s ease-in-out;
+}
+
+.section-facebook textarea:focus{
+    height: 150px;
+}
+
+.btnbox {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.btn {border-radius: 0px;}
+.btnbox .btn-success {float: left;}
+.btnbox .btn-info{float: right;}
+
+.section-facebook .content {
+    margin-top: 10px;
+    position: relative;
+}
+
+.section-facebook .content .profilebox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-facebook .content .profilebox .profilebox-content {
+    padding-left: 50px;
+}
+
+.section-facebook .content .profilebox .profilebox-content .title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.section-facebook .content .profilebox .profilebox-content .time {
+    font-size: 12px;
+}
+
+.content-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imgbox img {
+    width: 100%;
+}
+
+.likebox {
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.likebox a {
+    display: block;
+    color: black;
+}
+
+.likebox img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.likebox span {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.commentbox {
+    border-bottom: 1px solid #d2d2d2;
+    overflow: hidden;
+}
+
+.commentbox a {
+    display: block;
+    float: left;
+    width: 33.3333%;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.commentbox a:hover {
+    text-decoration: underline;
+}

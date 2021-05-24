@@ -35,6 +35,11 @@ ul, li, dl, ol {
 .form-control {border-radius: 4px;}
 section {margin-top: 52px;}
 
+footer {margin-top: 80px;}
+.title-btn {text-align: center;}
+
+
+
 /* =====헤더===== */
 .header_col1 {
     background-color: #eee;
