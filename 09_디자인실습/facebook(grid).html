@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/tab.css">
     <link rel="stylesheet" href="css/mypage.css">
     <link rel="stylesheet" href="css/facebook.css">
+    <link rel="stylesheet" href="css/board_detail.css">
 
 </head>
 <body>
@@ -86,70 +87,70 @@
         <div class="container">
             <div class="row">
                 <aside class="col-sm-3 aside-facebook">
-                    <div class="aside-left">
-                        <div class="sec"> <!--img-->
-                            <img src="img/profile.png" alt="logo">
-                            jykim3097
-                        </div>
-                        <div class="sec">
-                            <div><a href="#">뉴스피드</a></div>
-                            <div><a href="#">메신저</a></div>
-                            <div><a href="#">watch동영상</a></div>
-                        </div>
-                        <div class="sec">
-                            <div><a href="#">둘러보기</a></div>
-                        </div>
-                        <div class="sec">
-                            <div><a href="#">기부 캠페인</a></div>
-                            <div><a href="#">페이지</a></div>
-                            <div><a href="#">그룹</a></div>
-                            <div><a href="#">이벤트</a></div>
-                            <div><a href="#">친구리스트</a></div>
-                        </div>
-                    </div>
+                    <p><img src="img/profile.png" alt="logo"> jykim3097</p>
+                    <ul>
+                        <li><a href="#">뉴스피드</a></li>
+                        <li><a href="#">메신저</a></li>
+                        <li><a href="#">watch동영상</a></li>
+                    </ul>
+                    <p><a href="#">둘러보기</a></p>
+                    <ul>
+                        <li><a href="#">기부 캠페인</a></li>
+                        <li><a href="#">페이지</a></li>
+                        <li><a href="#">그룹</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">친구리스트</a></li>
+                    </ul>
                 </aside>
 
                 <div class="col-sm-7 section-facebook">
-                    <div>
-                        <label>게시글을 등록하세요</label>
-                        <textarea rows="4" class="form-control"></textarea>
-                        <div class="btnbox"> <!--btn-->
-                            <button class="btn btn-success">이미지업로드</button>
-                            <button class="btn btn-info">등록하기</button>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="profilebox">
-                            <img src="img/profile.png" alt="profile">
-                            <div class="profilebox-content">
-                                <div class="title">테스트</div>
-                                <div class="time">21시간</div>
-                            </div>
-                        </div>
+                    <h3>게시글을 등록하세요</h3>
+                    <!-- 로드된 이미지를 표시할 영역 -->
+                    <div class="fileDiv"><img src="#" alt="로드이미지"></div>
 
-                        <div class="content-inner">
-                            <p>삶이 우리를 끝없이 시험하기에 고어텍스는 한계를 테스트합니다</p>
-                        </div>
-                        <div class="imgbox">
-                            <a href="">
-                                <img src="img/facebook.jpg" alt="img">
-                            </a>
-                        </div>
-                        <div class="likebox">
-                            <div>
-                                <img src="img/like.png" alt="like">
-                                <span>522</span>
-                            </div>
-                        </div>
-                        <div class="commentbox">
-                            <a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>좋아요</a>
-                            <a href="#"><i class="glyphicon glyphicon-comment"></i>댓글달기</a>
-                            <a href="#"><i class="glyphicon glyphicon-share-alt"></i>공유하기</a>
-                            </div>
+                    <div class="reply-content">
+                        <textarea rows="4" class="form-control"></textarea>
+                    </div>
+
+                    <div class="reply-group"> <!--btn-->
+                        <button class="btn btn-success left">이미지업로드</button>
+                        <button class="btn btn-info right">등록하기</button>
+                    </div>
+
+                    <div class="profile-inner">
+                        <img src="img/profile.png" alt="profile">
+                        <div class="profile-inner-content">
+                            <div class="title">테스트</div>
+                            <div class="time">21시간</div>
                         </div>
                     </div>
+
+                    <div class="content-inner">
+                        <p>삶이 우리를 끝없이 시험하기에 고어텍스는 한계를 테스트합니다</p>
+                    </div>
+
+                    <div class="img-inner">
+                        <a href="">
+                            <img src="img/facebook.jpg" alt="img">
+                        </a>
+                    </div>
+
+                    <div class="like-inner">
+                        <a>
+                            <img src="img/like.png" alt="like">
+                            <span>522</span>
+                        </a>
+                    </div>
+
+                    <div class="comment-inner">
+                        <a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>좋아요</a>
+                        <a href="#"><i class="glyphicon glyphicon-comment"></i>댓글달기</a>
+                        <a href="#"><i class="glyphicon glyphicon-share-alt"></i>공유하기</a>
+                    </div>
+                    </div>
+
                     <aside class="col-sm-2 aside-facebook">
-                        <div class="sec">목록</div>
+                        <p>목록</p>
                         <ul>
                             <li>목록1</li>
                             <li>목록2</li>
